@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweat - Projekty</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #192231;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+       .brand {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: 'Minecraft', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            text-decoration: none;
+            background-color: #0056b3;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003b80;
+            color: #fff;
+        }
+
+       .card {
+            width: 25%; /* changed from 30% to 25% */
+            background-color: #2f3640;
+            border: 2px solid #1a1a1a;
+            border-radius: 8px;
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+       .card:hover {
+            transform: translateY(-5px);
+        }
+
+       .card h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+       .card p {
+            margin-bottom: 1rem;
+        }
+
+       .card-container {
+            border: 1px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 3rem;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+       .regHostFont {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+       .regHostButton {
+            background-color: #32CD32; /* lime green */
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-top: 5rem;
+        }
+
+       .regHostButton:hover {
+            background-color: #2f9e2f; /* darker lime green */
+        }
+
+       .regHostImage {
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">Sweat</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="projekty.html">Projekty</a></li>
+                <li><a>Můj Discord - sweatxddd</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="card-container">
+        <div class="card">
+            <h2>Prozatím Prázdný</h2>
+            <p></p>
+            <img src="https://cdn.discordapp.com/attachments/1234098540439928842/1234170256059011165/xdd.png?ex=662fc21e&is=662e709e&hm=67fe37e4ecf06c598cbb04fe3b37baa7b60ae77b1a65385e4de190d201a3c37a&" alt="Projekt 2"style="width: 50%;">
+        </div>
+        <div class="card">
+            <h2 class="regHostFont">RegHost</h2>
+            <p>Bezplatný minecraft hosting</p>
+            <img class="regHostImage" src="https://cdn.discordapp.com/attachments/1234098540439928842/1234173542501978112/reghost-2_square.png?ex=662fc52e&is=662e73ae&hm=cb06bea6bbf79508e665cea0abe363bf6b06ea8affe4c2eab2bb2216a8254b72&" alt="Projekt 2">
+            <button class="regHostButton" onclick="window.open('https://reghost.cloud')">Prohlédnout</button>
+        </div>
+        <div class="card">
+            <h2>Prozatím Prázdný</h2>
+            <p></p>
+            <img src="https://cdn.discordapp.com/attachments/1234098540439928842/1234170256059011165/xdd.png?ex=662fc21e&is=662e709e&hm=67fe37e4ecf06c598cbb04fe3b37baa7b60ae77b1a65385e4de190d201a3c37a&" alt="Projekt 2"style="width: 50%;">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vaše jméno. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+
+</html>
